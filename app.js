@@ -36,6 +36,9 @@ function submitForm() {
     }
 }
 function displaySubmittedData(formDataObj) {
+    // create an h2 for added users before users data Container
+    var txtContent = document.getElementById('addedUsrs');
+    txtContent.textContent = "Added users"
     // Create card container element with Bootstrap grid classes
     var cardContainer = document.createElement('div');
     cardContainer.classList.add('col', 'mb-4');
